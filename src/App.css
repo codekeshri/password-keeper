@@ -1,3 +1,8 @@
-.app {
-  align-items: center;
+.App {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.addNewPass {
+  margin-top: 100px;
 }

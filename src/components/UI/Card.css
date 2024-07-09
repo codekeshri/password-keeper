@@ -1,0 +1,11 @@
+.card {
+  background: linear-gradient(
+    135deg,
+    #ffafbd,
+    #ffc3a0
+  ); /* Gradient background */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  border-radius: 15px; /* Increased border radius for smoother corners */
+  padding: 20px; /* Added padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effect */
+}
