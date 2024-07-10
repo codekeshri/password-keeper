@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(34, 29, 29);
+  padding: 20px;
+  border-bottom: 2px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  color: #e9ecef;
+}
+
+.header h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.header span {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.notification-badge {
+  background-color: black;
+  color: white;
+  padding: 5px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-left: 10px;
+  display: inline-block;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}

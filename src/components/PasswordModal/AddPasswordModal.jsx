@@ -1,5 +1,8 @@
 import React, { useState, useContext } from "react";
 import PasswordContext from "../Context/PasswordContext";
+import Card from "../UI/Card";
+import Button from "../UI/Button";
+import { Input } from "../UI/Input";
 
 const PasswordModal = ({ onClose }) => {
   const [site, setSite] = useState("");
@@ -13,23 +16,26 @@ const PasswordModal = ({ onClose }) => {
   };
 
   return (
-    <div className="modal">
+    <Card className="modal">
       <form onSubmit={submitHandler}>
-        <label>Site</label>
-        <input
+        <Input
           type="text"
+          className="input"
           value={site}
+          placeholder="Site"
           onChange={(e) => setSite(e.target.value)}
-        ></input>
-        <input
+        />
+        <Input
           type="text"
+          className="input"
           value={password}
+          placeholder="password"
           onChange={(e) => setPassword(e.target.value)}
-        ></input>
-        <button onClick={submitHandler}>Save</button>
-        <button onClick={onClose}></button>
+        />
+        <Button onClick={submitHandler}>Save</Button>
+        <Button onClick={onClose}>Close</Button>
       </form>
-    </div>
+    </Card>
   );
 };
 
